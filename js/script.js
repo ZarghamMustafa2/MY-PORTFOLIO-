@@ -4,38 +4,54 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ---------- PRELOADER (mobile-safe) ----------
+    // ---------- PRELOADER (session-based for speed) ----------
     const preloader = document.getElementById('preloader');
     const preloaderBar = document.getElementById('preloader-bar');
-    let loadProgress = 0;
     const isMobile = window.innerWidth < 768;
+    const hasVisited = sessionStorage.getItem('visited');
 
-    // Don't lock body scroll on mobile (causes rendering issues)
-    if (!isMobile) document.body.style.overflow = 'hidden';
+    if (hasVisited) {
+        // Skip preloader on subsequent page navigations
+        if (preloader) preloader.style.display = 'none';
+        document.body.style.overflow = '';
+        initAll();
+    } else {
+        // Show fast preloader only on first entry
+        if (!isMobile) document.body.style.overflow = 'hidden';
+        sessionStorage.setItem('visited', 'true');
+        
+        let loadProgress = 0;
+        const loadInterval = setInterval(() => {
+            loadProgress += Math.random() * 25 + 15; // Faster increments (15 to 40)
+            if (loadProgress > 100) loadProgress = 100;
+            if (preloaderBar) preloaderBar.style.width = loadProgress + '%';
+            
+            if (loadProgress === 100) {
+                clearInterval(loadInterval);
+                setTimeout(() => {
+                    if (preloader) {
+                        preloader.classList.add('hidden');
+                        setTimeout(() => {
+                            preloader.style.display = 'none';
+                        }, 500);
+                    }
+                    document.body.style.overflow = '';
+                    initAll();
+                }, 150); // Shorter final delay
+            }
+        }, 80); // Faster checks (every 80ms instead of 200ms)
 
-    const loadInterval = setInterval(() => {
-        loadProgress += Math.random() * 30;
-        if (loadProgress > 100) loadProgress = 100;
-        if (preloaderBar) preloaderBar.style.width = loadProgress + '%';
-        if (loadProgress === 100) {
+        // Fallback: hide preloader after 1.5s
+        setTimeout(() => {
             clearInterval(loadInterval);
-            setTimeout(() => {
-                if (preloader) preloader.classList.add('hidden');
+            if (preloader && !preloader.classList.contains('hidden')) {
+                preloader.classList.add('hidden');
+                preloader.style.display = 'none';
                 document.body.style.overflow = '';
                 initAll();
-            }, 400);
-        }
-    }, 200);
-
-    // Fallback: hide preloader after 3s even if not 100%
-    setTimeout(() => {
-        clearInterval(loadInterval);
-        if (preloader && !preloader.classList.contains('hidden')) {
-            preloader.classList.add('hidden');
-            document.body.style.overflow = '';
-            initAll();
-        }
-    }, 3000);
+            }
+        }, 1500);
+    }
 
     function initAll() {
 
