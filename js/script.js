@@ -55,6 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (canRender3D) { try {
 
+            // === SCENE, CAMERA, RENDERER INITIALIZATION ===
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+            camera.position.z = 8;
+
+            const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            renderer.domElement.style.position = 'fixed';
+            renderer.domElement.style.top = '0';
+            renderer.domElement.style.left = '0';
+            renderer.domElement.style.width = '100%';
+            renderer.domElement.style.height = '100%';
+            renderer.domElement.style.zIndex = '-2';
+            renderer.domElement.style.pointerEvents = 'none';
+            document.body.appendChild(renderer.domElement);
+
             // === LIGHTS ===
             scene.add(new THREE.AmbientLight(0x404060));
             const dl1 = new THREE.DirectionalLight(0xffffff, 1.2);
@@ -626,7 +643,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 trigger: panel,
                 start: 'top 80%',
                 onEnter: () => {
-                    card.querySelectorAll('.skill-bar').forEach(bar => {
+                    panel.querySelectorAll('.skill-bar').forEach(bar => {
                         const w = bar.getAttribute('data-width');
                         bar.querySelector('.skill-bar-fill').style.width = w + '%';
                     });
