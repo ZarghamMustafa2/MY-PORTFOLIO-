@@ -583,7 +583,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const themeBtn = document.getElementById('theme-btn');
         const html = document.documentElement;
 
-        const saved = localStorage.getItem('theme') || 'dark';
+        const saved = localStorage.getItem('theme') || 'light';
         html.setAttribute('data-theme', saved);
 
         if (themeBtn) {
