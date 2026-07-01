@@ -854,31 +854,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.classList.add('loading');
                 submitBtn.disabled = true;
 
-                const sendEmail = () => {
-                    return emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-                        from_name: document.getElementById('name').value,
-                        from_email: document.getElementById('email').value,
-                        subject: document.getElementById('subject').value,
-                        message: document.getElementById('message').value,
-                    });
-                };
-
-                if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
-                    sendEmail()
-                        .then(() => showFormSuccess())
-                        .catch(() => showFormError())
-                        .finally(() => {
-                            submitBtn.classList.remove('loading');
-                            submitBtn.disabled = false;
-                        });
-                } else {
-                    // Demo mode: simulate send
-                    setTimeout(() => {
+                // Send using Formspree AJAX
+                const data = new FormData(contactForm);
+                fetch(contactForm.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
                         showFormSuccess();
-                        submitBtn.classList.remove('loading');
-                        submitBtn.disabled = false;
-                    }, 1500);
-                }
+                    } else {
+                        showFormError();
+                    }
+                })
+                .catch(() => {
+                    showFormError();
+                })
+                .finally(() => {
+                    submitBtn.classList.remove('loading');
+                    submitBtn.disabled = false;
+                });
             });
 
             function showFormSuccess() {
