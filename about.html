@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRANDLOOM X | About</title>
+    <meta name="description" content="Learn about BRANDLOOM X - a Full-Stack Web Developer, Mobile App Developer, and Software Engineer with years of professional experience.">
+    <meta name="keywords" content="web developer, software engineer, mobile developer, react, react native, nodejs, portfolio, full stack developer">
+    <meta name="author" content="BRANDLOOM X">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BRANDLOOM X | About">
+    <meta property="og:description" content="Learn about my skills, experience, and professional background in software engineering.">
+    <meta property="og:image" content="assets/avatar.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="preloader-icon">&lt;/&gt;</span>
+            </div>
+            <div class="preloader-bar-container">
+                <div class="preloader-bar" id="preloader-bar"></div>
+            </div>
+            <p class="preloader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Ambient Orbs -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+
+    <!-- 3D Floating Decorations -->
+    <div class="float-3d shape-hex"></div>
+    <div class="float-3d shape-diamond"></div>
+    <div class="float-3d shape-ring"></div>
+    <div class="float-3d shape-cube"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="BRANDLOOM X" class="logo-img">
+            </a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary btn-sm header-cta">Hire Me</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-head" data-anim="fade-up">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Turning Ideas Into Scalable Digital Products</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image" data-anim="fade-right">
+                        <div class="about-image-wrapper">
+                            <img src="assets/avatar.png" alt="BRANDLOOM X">
+                            <div class="about-exp-badge">
+                                <span class="exp-number">5+</span>
+                                <span>Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content" data-anim="fade-left">
+                        <h3>A Passionate Developer Who Codes with Precision & Creativity</h3>
+                        <p>I'm a full-stack developer with a deep passion for designing scalable architectures, smooth animations, and pixel-perfect interfaces. My mission is to bridge the gap between complex business requirements and elegant technical solutions.</p>
+                        <p>From enterprise ERP portals to cross-platform mobile apps and real-time data dashboards — I bring a problem-first, detail-obsessed approach to every project.</p>
+                        <div class="about-tabs">
+                            <div class="about-tab-headers">
+                                <button class="about-tab-btn active" data-tab="skills-tab">Skills</button>
+                                <button class="about-tab-btn" data-tab="experience-tab">Experience</button>
+                                <button class="about-tab-btn" data-tab="education-tab">Education</button>
+                            </div>
+                            <div class="about-tab-content">
+                                <div class="about-tab-panel active" id="skills-tab">
+                                    <div class="about-tab-skills">
+                                        <div class="skill-tag">React.js / Next.js</div>
+                                        <div class="skill-tag">React Native</div>
+                                        <div class="skill-tag">Node.js / Express</div>
+                                        <div class="skill-tag">Python / Django</div>
+                                        <div class="skill-tag">PostgreSQL / MongoDB</div>
+                                        <div class="skill-tag">Docker / AWS</div>
+                                        <div class="skill-tag">TypeScript</div>
+                                        <div class="skill-tag">Three.js / GSAP</div>
+                                        <div class="skill-tag">Firebase / Supabase</div>
+                                        <div class="skill-tag">REST / GraphQL / gRPC</div>
+                                        <div class="skill-tag">Redux / Zustand</div>
+                                        <div class="skill-tag">Tailwind / Framer Motion</div>
+                                    </div>
+                                </div>
+                                <div class="about-tab-panel" id="experience-tab">
+                                    <ul class="about-tab-list">
+                                        <li><strong>2024 — Present:</strong> Senior Developer at TechVibe Solutions</li>
+                                        <li><strong>2022 — 2024:</strong> Full Stack Web Engineer at PixelCraft Agency</li>
+                                        <li><strong>2020 — 2022:</strong> Freelance Mobile Developer on Upwork & Toptal</li>
+                                    </ul>
+                                </div>
+                                <div class="about-tab-panel" id="education-tab">
+                                    <ul class="about-tab-list">
+                                        <li><strong>B.Sc. Computer Science</strong> — National University of Computer & Emerging Sciences</li>
+                                        <li><strong>Certified AWS Cloud Practitioner</strong> — Amazon Web Services (2023)</li>
+                                        <li><strong>Google Mobile Web Specialist</strong> — Google Developers (2022)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="section-head" data-anim="fade-up">
+                    <span class="section-tag">What I Offer</span>
+                    <h2 class="section-title">Comprehensive Development Services</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-anim="fade-up" data-tilt>
+                        <div class="service-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web Development</h3>
+                        <p>High-performance, responsive websites & web apps built with React.js, Next.js, Node.js — optimized for speed, SEO, and user engagement.</p>
+                    </div>
+                    <div class="service-card" data-anim="fade-up" data-delay="0.1" data-tilt>
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile App Development</h3>
+                        <p>Cross-platform mobile apps using React Native & Flutter. Smooth UI, offline support, push notifications, and real-time data sync.</p>
+                    </div>
+                    <div class="service-card" data-anim="fade-up" data-delay="0.2" data-tilt>
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend & API Development</h3>
+                        <p>Scalable RESTful and GraphQL APIs, microservices architecture, Redis caching, PostgreSQL/MongoDB databases, and cloud deployment.</p>
+                    </div>
+                    <div class="service-card" data-anim="fade-up" data-delay="0.3" data-tilt>
+                        <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>AWS/GCP infrastructure, Docker containerization, CI/CD pipelines, automated testing, and monitoring solutions for production systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section">
+            <div class="container">
+                <div class="section-head" data-anim="fade-up">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What Clients Say</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="testimonials-slider" data-anim="fade-up">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Brandloom X ne hamari e-commerce website ko bohot behtreen tareeqe se redesign kiya. Page speed 40% tak behtar ho gayi aur user experience bohot smooth hai."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/avatar.png" alt="Bilal Siddiqui">
+                            <div>
+                                <h4>Bilal Siddiqui</h4>
+                                <span>Co-Founder, Karachi Bazaar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"React Native ka code bohot saf aur structured hai. Hmare fitness app ke users animations se boht impress hain. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="assets/avatar.png" alt="Zainab Amin">
+                            <div>
+                                <h4>Zainab Amin</h4>
+                                <span>Product Manager, FitLahore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"Database scale karne aur complex APIs ko optimize karne mein inka koi muqabla nahi. Tracking system ko secure aur fast banane ke liye shukriya."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/avatar.png" alt="Kamran Khan">
+                            <div>
+                                <h4>Kamran Khan</h4>
+                                <span>CTO, IndusLogistics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="BRANDLOOM X" class="logo-img">
+                </a>
+                <p>Creating functional, elegant digital designs with clean code solutions.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe for tech insights and project updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email" id="newsletter-input">
+                    <button class="newsletter-btn" id="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 BRANDLOOM X. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/193yp2MXSB/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/923079661669" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- CDN Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

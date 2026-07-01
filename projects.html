@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRANDLOOM X | Projects</title>
+    <meta name="description" content="Explore the portfolio of BRANDLOOM X - Web apps, mobile apps, and software projects built with modern technologies.">
+    <meta name="keywords" content="web developer, software engineer, mobile developer, react, react native, nodejs, portfolio, full stack developer">
+    <meta name="author" content="BRANDLOOM X">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BRANDLOOM X | Projects">
+    <meta property="og:description" content="Featured projects in web development, mobile apps, and software engineering.">
+    <meta property="og:image" content="assets/avatar.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="preloader-icon">&lt;/&gt;</span>
+            </div>
+            <div class="preloader-bar-container">
+                <div class="preloader-bar" id="preloader-bar"></div>
+            </div>
+            <p class="preloader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Ambient Orbs -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+
+    <!-- 3D Floating Decorations -->
+    <div class="float-3d shape-hex"></div>
+    <div class="float-3d shape-diamond"></div>
+    <div class="float-3d shape-ring"></div>
+    <div class="float-3d shape-cube"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="BRANDLOOM X" class="logo-img">
+            </a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary btn-sm header-cta">Hire Me</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Projects -->
+        <section class="projects section">
+            <div class="container">
+                <div class="section-head" data-anim="fade-up">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="project-filters" data-anim="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="software">Software</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web" data-modal="modal-1" data-anim="fade-up" data-tilt>
+                        <div class="project-img">
+                            <img src="assets/project_web.png" alt="Nishat Group Portal">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="https://www.nishat.net" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <button class="project-link open-modal"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat">Web Development</span>
+                            <h3>Nishat Group Enterprise Portal</h3>
+                            <p>A customized high-performance cloud ERP and analytics portal for streamlined operations tracking.</p>
+                            <div class="project-tags">
+                                <span>React.js</span><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="mobile" data-modal="modal-2" data-anim="fade-up" data-delay="0.1" data-tilt>
+                        <div class="project-img">
+                            <img src="assets/project_mobile.png" alt="Packages Ltd. Transit Tracker">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="https://www.packages.com.pk" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <button class="project-link open-modal"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat">Mobile App</span>
+                            <h3>Packages Ltd. Transit Tracker</h3>
+                            <p>A cross-platform logistics tracking app with offline caching and smartwatch alerts.</p>
+                            <div class="project-tags">
+                                <span>React Native</span><span>SQLite</span><span>Firebase</span><span>Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="software" data-modal="modal-3" data-anim="fade-up" data-delay="0.2" data-tilt>
+                        <div class="project-img">
+                            <img src="assets/project_software.png" alt="Systems Ltd. Integration Hub">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="https://www.systemsltd.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <button class="project-link open-modal"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat">Software</span>
+                            <h3>Systems Ltd. Integration Hub</h3>
+                            <p>A scalable gRPC message broker for microservices transaction automation.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Docker</span><span>Redis</span><span>gRPC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modals -->
+    <div class="modal" id="modal-1">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-img">
+                    <img src="assets/project_web.png" alt="Nishat Group Portal">
+                </div>
+                <div class="modal-text">
+                    <span class="modal-cat">Web App</span>
+                    <h2>Nishat Group Enterprise Portal</h2>
+                    <div class="modal-divider"></div>
+                    <p>An enterprise ERP dashboard and portal custom designed for Nishat Group. Handles real-time resource allocations, inventory flows, and executive analytics reports.</p>
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Configurable drag-and-drop ERP panels</li>
+                            <li>Optimized PostgreSQL queries (50% faster reports)</li>
+                            <li>Multi-tiered JWT role-based authentication</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <span>React.js</span><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>ChartJS</span>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="https://www.nishat.net" target="_blank" class="btn btn-primary">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-2">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-img">
+                    <img src="assets/project_mobile.png" alt="Packages Ltd. Transit Tracker">
+                </div>
+                <div class="modal-text">
+                    <span class="modal-cat">Mobile App</span>
+                    <h2>Packages Ltd. Transit Tracker</h2>
+                    <div class="modal-divider"></div>
+                    <p>A native cross-platform logistical tracker for Packages Limited, handling package codes, transit parameters, and warehouse check-in logging.</p>
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>High-speed barcode & QR scanning</li>
+                            <li>SQLite offline caching for low-signal areas</li>
+                            <li>Push notifications for dispatch managers</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <span>React Native</span><span>Expo</span><span>Redux</span><span>SQLite</span><span>Firebase</span>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="https://www.packages.com.pk" target="_blank" class="btn btn-primary">App Store <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-3">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-img">
+                    <img src="assets/project_software.png" alt="Systems Ltd. Integration Hub">
+                </div>
+                <div class="modal-text">
+                    <span class="modal-cat">Software</span>
+                    <h2>Systems Ltd. Integration Hub</h2>
+                    <div class="modal-divider"></div>
+                    <p>A scalable, multi-threaded server-to-server transaction and message broker hub for Systems Limited. Solves latency issues across API networks.</p>
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>gRPC pipelines handling 12k req/sec</li>
+                            <li>Docker + Redis for data load management</li>
+                            <li>End-to-end payload encryption on AWS</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <span>Python</span><span>Docker</span><span>Redis</span><span>gRPC</span><span>AWS</span>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="https://www.systemsltd.com" target="_blank" class="btn btn-primary">Docs <i class="fas fa-file-alt"></i></a>
+                        <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="BRANDLOOM X" class="logo-img">
+                </a>
+                <p>Creating functional, elegant digital designs with clean code solutions.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe for tech insights and project updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email" id="newsletter-input">
+                    <button class="newsletter-btn" id="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 BRANDLOOM X. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/193yp2MXSB/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/923079661669" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- CDN Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

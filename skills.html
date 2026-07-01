@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRANDLOOM X | Skills</title>
+    <meta name="description" content="Explore the technical skills of BRANDLOOM X - Web Development, Mobile Development, Software Engineering, and more.">
+    <meta name="keywords" content="web developer, software engineer, mobile developer, react, react native, nodejs, portfolio, full stack developer">
+    <meta name="author" content="BRANDLOOM X">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BRANDLOOM X | Skills">
+    <meta property="og:description" content="Technical skills and expertise in web development, mobile apps, and software engineering.">
+    <meta property="og:image" content="assets/avatar.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="preloader-icon">&lt;/&gt;</span>
+            </div>
+            <div class="preloader-bar-container">
+                <div class="preloader-bar" id="preloader-bar"></div>
+            </div>
+            <p class="preloader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Ambient Orbs -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+
+    <!-- 3D Floating Decorations -->
+    <div class="float-3d shape-hex"></div>
+    <div class="float-3d shape-diamond"></div>
+    <div class="float-3d shape-ring"></div>
+    <div class="float-3d shape-cube"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="BRANDLOOM X" class="logo-img">
+            </a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link active">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary btn-sm header-cta">Hire Me</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Skills -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-head" data-anim="fade-up">
+                    <span class="section-tag">My Expertise</span>
+                    <h2 class="section-title">Technical Skills & Proficiency</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-tabs" data-anim="fade-up">
+                    <button class="skill-tab-btn active" data-skill-tab="web">Web Development</button>
+                    <button class="skill-tab-btn" data-skill-tab="mobile">Mobile</button>
+                    <button class="skill-tab-btn" data-skill-tab="backend">Backend & DevOps</button>
+                    <button class="skill-tab-btn" data-skill-tab="tools">Tools & Others</button>
+                </div>
+                <div class="skills-panels" data-anim="fade-up">
+                    <div class="skill-panel active" id="web">
+                        <div class="skill-bar" data-width="95">
+                            <div class="skill-bar-info">
+                                <span>HTML5 & CSS3 / SCSS</span>
+                                <span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="92">
+                            <div class="skill-bar-info">
+                                <span>JavaScript / TypeScript</span>
+                                <span class="skill-pct">92%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="90">
+                            <div class="skill-bar-info">
+                                <span>React.js / Next.js</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="85">
+                            <div class="skill-bar-info">
+                                <span>Tailwind CSS / Framer Motion</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="mobile">
+                        <div class="skill-bar" data-width="88">
+                            <div class="skill-bar-info">
+                                <span>React Native / Expo</span>
+                                <span class="skill-pct">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="80">
+                            <div class="skill-bar-info">
+                                <span>Flutter</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="75">
+                            <div class="skill-bar-info">
+                                <span>Swift (iOS)</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="backend">
+                        <div class="skill-bar" data-width="88">
+                            <div class="skill-bar-info">
+                                <span>Node.js / Express</span>
+                                <span class="skill-pct">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="82">
+                            <div class="skill-bar-info">
+                                <span>Python / Django</span>
+                                <span class="skill-pct">82%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="85">
+                            <div class="skill-bar-info">
+                                <span>PostgreSQL / MongoDB</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="80">
+                            <div class="skill-bar-info">
+                                <span>Docker / AWS / CI/CD</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="tools">
+                        <div class="skill-bar" data-width="90">
+                            <div class="skill-bar-info">
+                                <span>Git / GitHub / GitLab</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="85">
+                            <div class="skill-bar-info">
+                                <span>Figma / Adobe XD</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar" data-width="78">
+                            <div class="skill-bar-info">
+                                <span>Three.js / GSAP / WebGL</span>
+                                <span class="skill-pct">78%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <div class="section-head" data-anim="fade-up">
+                    <span class="section-tag">Timeline</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline" data-anim="fade-up">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 — Present</div>
+                        <div class="timeline-content">
+                            <h3>Senior Developer</h3>
+                            <h4>TechVibe Solutions</h4>
+                            <p>Spearheaded front-end redesign and architecture transition, leading to 40% page performance increase. Supervised 5 junior developers.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 — 2024</div>
+                        <div class="timeline-content">
+                            <h3>Full Stack Web Engineer</h3>
+                            <h4>PixelCraft Agency</h4>
+                            <p>Delivered 30+ responsive client sites using React.js/Next.js. Engineered backend microservices with Node.js/Express.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 — 2022</div>
+                        <div class="timeline-content">
+                            <h3>Freelance Mobile Developer</h3>
+                            <h4>Upwork & Toptal</h4>
+                            <p>Designed and published custom mobile apps for international clients with payment gateways and offline databases.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq section">
+            <div class="container">
+                <div class="section-head" data-anim="fade-up">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="faq-grid" data-anim="fade-up">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you work with global clients?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! I work remotely with clients and tech teams across the globe. I coordinate overlapping schedules for transparent project sprints.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is your development process?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>My workflow: Discovery & Planning, UI/UX Mockups, Implementation (Agile sprints), Testing, Deployment, and Support.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Which tech stack do you recommend?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For web: Next.js/React + Node.js. For mobile: React Native or Flutter. I choose tools based on project requirements.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do we start a collaboration?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Fill out the contact form below or email me at brandloomx64@gmail.com. I respond within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="BRANDLOOM X" class="logo-img">
+                </a>
+                <p>Creating functional, elegant digital designs with clean code solutions.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe for tech insights and project updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email" id="newsletter-input">
+                    <button class="newsletter-btn" id="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 BRANDLOOM X. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/193yp2MXSB/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/923079661669" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- CDN Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
