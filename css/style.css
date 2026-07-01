@@ -407,13 +407,13 @@ button { cursor: pointer; }
 }
 
 .logo-img {
-    height: 44px;
+    height: 56px;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 2px 8px rgba(0,0,0,.2));
 }
 
-.header.scrolled .logo-img { height: 36px; }
+.header.scrolled .logo-img { height: 46px; }
 
 .nav-list {
     display: flex;
@@ -2169,8 +2169,8 @@ button[type="submit"].loading .btn-loading { display: inline-flex; }
     .header { height: 60px; }
     .header.scrolled { height: 54px; }
     :root { --nav-h: 60px; }
-    .logo-img { height: 36px; }
-    .header.scrolled .logo-img { height: 30px; }
+    .logo-img { height: 44px; }
+    .header.scrolled .logo-img { height: 38px; }
     .theme-btn { width: 36px; height: 36px; font-size: .9rem; }
     .menu-toggle { width: 22px; height: 16px; }
     .navbar { padding: 16px 16px 24px; top: 60px; }
